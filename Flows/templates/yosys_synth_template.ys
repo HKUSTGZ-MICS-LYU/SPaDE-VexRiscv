@@ -1,0 +1,9 @@
+read -sv {RTL}
+synth -top {TOP_NAME}
+
+dfflibmap -liberty {PDK}
+abc -liberty {PDK}
+
+clean
+
+tee -o {REPORT_PATH}/yosys.rpt stat -liberty {PDK}

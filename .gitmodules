@@ -1,0 +1,3 @@
+[submodule "Design/riscv/VexRiscv"]
+	path = Design/riscv/VexRiscv
+	url = git@github.com:HKUSTGZ-MICS-LYU/VexRiscv.git

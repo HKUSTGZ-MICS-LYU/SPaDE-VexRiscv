@@ -1,0 +1,55 @@
+{
+    "Universe" : {
+        "NoMemory" : [true, false],
+        "NoWriteBack" : [true, false],
+        "ExecuteRegfile" : [false, true],
+        "HasMulDiv" : [false, true]
+    },
+    "Shift" : ["LT", "FE", "FL"],
+    "Branch" : [false, true],
+    "RegFileAsync" : [false, true],
+    "Hazard" : ["IL","BA","BE","BM","BW","BWB"],
+    "Src" : {
+        "SepAddSub" : [false, true],
+        "ExecInsert" : [false, true]
+    },
+    "MulDiv" : {
+        "MulType" : ["Iterative","Simple","Buffer", "Mul16"],
+        "BuffIn" : [false, true],
+        "BuffOut" : [false, true],
+        "MulUnroll" : [1,2,4,8,16,32],
+        "DivUnroll" : [1,2,4,8,16,32]
+    },
+    "IBus" : {
+        "compressed" : [false, true],
+        "busType" : ["Simple","Cached"],
+        "latency" : [1,2,3,4,5],
+        "cmdForkOnSecondStage" : [false, true],
+        "cmdForkPersistence" : [false, true],
+        "prediction" : ["None","Static","Dynamic","DynamicTarget"],
+        "asyncTagMemory" : [false, true],
+        "tighlyCoupled" : [false, true],
+        "reducedBankWidth" : [false, true],
+        "relaxedPcCalculation" : [false, true],
+        "injectorStage" : [false, true],
+        "memDataWidth" : [32,64],
+        "bytePerLine" : [8,16,32,64],
+        "cacheSize" : [512,1024,2048,4096,8192],
+        "wayCount" : [1,2,4],
+        "twoCycleRam" : [false, true],
+        "twoCycleRamInnerMux" : [false, true],
+        "twoCycleCache" : [false, true]
+    },
+    "DBus" : {
+        "busType" : ["Simple","Cached"],
+        "earlyInjection" : [false, true],
+        "memDataWidth" : [32,64],
+        "cpuDataWidth" : [32,64],
+        "bytePerLine" : [8,16,32,64],
+        "relaxedRegister" : [false, true],
+        "earlyWaysHits" : [false, true],
+        "asyncTagMemory" : [false, true],
+        "cacheSize" : [512, 1024, 2048, 4096, 8192],
+        "wayCount" : [1, 2, 4]
+    }
+}
