@@ -42,8 +42,14 @@ If you want to change them, please check the details in `Optimizers/DDSP/mcts/mc
 
 ## Cite Us
 
-TBD...
-
+```LaTeX
+@inproceedings{space_partition_dse_iccd2024,
+  title     = {Efficient Microprocessor Design Space Exploration via Space Partitioning},
+  author    = {Zijun Jiang and Yangdi Lyu},
+  booktitle = {The 42nd IEEE International Conference on Computer Design (ICCD)},
+  year      = {2024}
+}
+```
 
 ## Acknowledgement
 
