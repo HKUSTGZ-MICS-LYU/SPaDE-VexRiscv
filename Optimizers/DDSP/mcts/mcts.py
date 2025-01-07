@@ -300,7 +300,7 @@ class mcts:
         path = self.CURT.parent
         resample_times = 1
         resample_timeout = 100
-
+        total_samples = 2*1024
         if self.CURT == self.ROOT:
             return self.propose_sample(n=1, sampler='sobol', space = space)
 
